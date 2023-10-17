@@ -1,0 +1,52 @@
+<html>
+
+<head>
+    <title>combinator</title>
+    <style>
+        /* combinator 
+        types  :
+        1. Grouping conbinator(,)
+        2. decendent combinator(blank space) 
+        3. child combinator(>)
+        4. general sibling combinator(~)
+        5. adjacent sibling combinator(+)
+        */
+        /* div, span {
+            color: blue;
+        } */
+        /* 2. decendent combinator(blank space)  
+        .parent div {
+            color: rgb(83, 14, 209);
+        }*/
+        /* 3. child combinator(>)
+        .parent>div>div {
+            color: chocolate;
+        } */
+        /* 4. general sibling combinator(~)  */
+        /* .child1~div {
+            color: chocolate;
+        } */
+        /* 5. adjacent sibling combinator(+)    */
+        .child1+div {
+            color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">parent
+        <div class="child1">Child 1
+            <div class="grand1">Grandchild 1</div>
+            <div class="grand2">Grandchild 2</div>
+            <div class="grand3">Grandchild 3</div>
+        </div>
+        <div class="child2">Child 2</div>
+        <div class="child3">Child 3</div>
+        <div class="child4">Child 4</div>
+    </div>
+    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas ipsum amet neque consequatur alias quo ducimus
+        asperiores. Distinctio quaerat assumenda, nostrum aliquam dolore consequatur cupiditate sunt ducimus quisquam
+        sapiente itaque?</span>
+</body>
+
+</html>
