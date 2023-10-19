@@ -1,0 +1,53 @@
+<html>
+
+<head>
+    <title>Image Slider</title>
+    <style>
+        * {
+            margin: 0%;
+        }
+
+        .container {
+            background-color: chocolate;
+            width: 300px;
+            height: 200px;
+            margin: auto;
+            position: relative;
+        }
+
+        .next,
+        .previous {
+            color: red;
+            position: absolute;
+            top: 40%;
+            font-size: 40;
+        }
+
+        .previous:hover, .next:hover{
+            color: blue;
+            cursor: pointer;
+        }
+        .next {
+
+            right: 0;
+
+        }
+
+        .previous {
+
+            left: 0;
+
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img  src="/CSS/image/photo1.jpg" alt="" width="300px">
+        <p class="next">&gt</p>
+        <p class="previous">&lt</p>
+    </div>
+</body>
+
+</html>
