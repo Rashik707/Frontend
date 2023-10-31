@@ -16,9 +16,10 @@
             list-style: none;
             justify-content: space-around;
             /* padding-top:35px; */
-           
+
         }
-        li{
+
+        li {
             padding-top: 25px;
         }
 
@@ -28,22 +29,47 @@
         }
 
         .left {}
-        i{
+
+        i {
             font-size: 20px;
             color: red;
         }
+
+        i:hover {
+            cursor: pointer;
+        }
+
+        li:hover {
+            cursor: pointer;
+        }
+
+        .item {
+            display: none;
+        }
+
+        .header li:hover .item {
+            display: block;
+        }
+        
     </style>
 </head>
 
 <body>
     <div class="header">
         <!-- <ul> -->
-            <li><i class="bi bi-house"></i></li>
-            <li><i class="bi bi-bag-check-fill"></i></li>
-            <li><i class="bi bi-telephone"></i></li>
-            <li><i class="bi bi-file-person-fill"></i></li>
-            <li><i class="bi bi-substack"></i></li>
-        <!-- </ul>   -->
+        <li><i class="bi bi-house"></i></li>
+        <li>Product
+            <ul class="item">
+                <li>laptop</li>
+                <li>Phone</li>
+                <li>monitor</li>
+                <li>Shoes</li>
+            </ul>
+        </li>
+        <li><i class="bi bi-telephone"></i></li>
+        <li><i class="bi bi-file-person-fill"></i></li>
+        <li><i class="bi bi-substack"></i></li>
+        <!-- </ul> -->
 
     </div>
     <div class="main">

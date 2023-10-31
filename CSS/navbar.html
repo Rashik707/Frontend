@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0%
+        }
+
+        .navbar {
+            width: 100vw;
+            height: 10vh;
+            background-color: aqua;
+        }
+
+        .items {
+            display: flex;
+            justify-content: space-evenly;
+            list-style: none;
+        }
+
+        .items li {
+            padding-top: 15px;
+            position: relative;
+        }
+
+        li:hover {
+            cursor: pointer;
+        }
+
+        .items li:hover {
+            background-color: blueviolet;
+        }
+
+        .catagory {
+            display: none;
+            position: absolute;
+            list-style: none;
+            padding: 0%;
+            background-color: gray;
+        }
+
+        .catagory li {
+            position: relative;
+        }
+
+        .items li:hover .catagory {
+            display: block;
+        }
+
+        .catagory li:hover {
+            background-color: red;
+
+
+        }
+
+        .laptop {
+            display: none;
+            list-style: none;
+            position: absolute;
+            top: 0;
+            left: 100%;
+            padding: 0;
+            background-color: rgb(66, 45, 185);
+        }
+        
+
+        .catagory li:hover .laptop {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <ul class="items">
+            <li>Home</li>
+            <li>Product
+                <ul class="catagory">
+                    <li>Laptop
+                        <ul class="laptop">
+                            <li>Lenovo</li>
+                            <li>Dell</li>
+                            <li>Asus</li>
+                        </ul>
+                    </li>
+                    <li>Phone
+                        <ul class="laptop">
+                            <li>Apple</li>
+                            <li>Samsung</li>
+                            <li>Redmi</li>
+                        </ul>
+                    </li>
+                    <li>Camera
+                        <ul class="laptop">
+                            <li>Sony</li>
+                            <li>Canon</li>
+                            
+                        </ul>
+                    </li>
+
+                </ul>
+            </li>
+            <li>Gallery</li>
+            <li>Contact</li>
+            <li>About</li>
+        </ul>
+    </div>
+</body>
+
+</html>
