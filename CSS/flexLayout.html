@@ -1,0 +1,208 @@
+<html>
+    <head>
+        <title>
+            Flex Layout
+        </title>
+        <style>
+            /* 
+            vw => viewport width(100vw)
+            vh => viewport height(100vh)
+            */
+            *{
+                margin: 0;
+                box-sizing: border-box;
+            }
+            .header{
+                /* width: 100%;
+                height: 50px; */
+                width: 100vw;
+                height: 10vh;
+                background-color: aqua;
+                /* padding-top: 20px; */
+            }
+            .main{
+                display: flex;
+                /* width: 100%; */
+                width: 100vw;
+            }
+            .left{
+                /* width: 25%;
+                height: 800px; */
+                width: 25vw;
+                height: 80vh;
+                background-color: blue;
+            }
+            .right{
+                /* width: 75%; */
+                /* width: 75vw; */
+            }
+            .right-top{
+                /* width: 100%;
+                height: 400px; */
+                width: 75vw;
+                height:40vh;
+                background-color: blueviolet;
+            }
+            .right-bottom{
+                display: flex;
+                /* width: 100%; */
+                /* width: 75vw; */
+            }
+            .right-bottom-left, .right-bottom-right{
+                /* width: 50%; */
+                width: 37vw;
+                background-color: yellowgreen;
+                /* height: 400px; */
+                height:40vh;
+            }
+            .right-bottom-right{
+                background-color: tomato;
+                width: 38vw;
+            }
+            .footer{
+                /* width: 100%; */
+                width: 100vw;
+                background-color: aqua;
+                /* height: 50px; */
+                height: 10vh;
+                padding-top: 20px;
+            }
+            .header>ul{
+                display: flex;
+                list-style: none;
+                justify-content: space-evenly;
+                font-size: 30px;
+                padding-top: 20px;
+            }
+            li:hover{
+                cursor: pointer;
+            }
+            .category{
+                display: none;
+                position: absolute;
+                list-style: none;
+                background-color: ghostwhite;
+            }
+            .item li:hover .category{
+                display: block;
+            }
+            .item li{ 
+                position: relative;
+            }
+            .category{
+                padding: 0;
+            }
+            .category li{
+                padding: 10px;
+            }
+            .category li:hover{
+                background-color: yellow;
+            }
+            .small{
+                display: none;
+            }
+            @media screen and (max-width: 600px) {
+                .header{
+                    display: none  ;
+                }
+                .small{
+                    display: block;
+                    
+                }
+                select{
+                    width: 100%;
+                    height:10vw;
+                    background-color: aqua;
+                    font-size: 20px;
+                    text-align: center;
+                }
+                option{
+                    background-color: red; 
+                    
+                }
+                select:hover{
+                    cursor: pointer;
+                }
+                option:hover{
+                    cursor: pointer;
+                }
+                .main{
+                    flex-direction: column;
+                }
+                .left{
+                    width: 100vw;
+                    text-align: center;
+                    font-size: 20px;
+                    /* padding: 50%; */
+                    height: 20vh;
+                }
+                .right-bottom{
+                    flex-direction: column;
+                    text-align: center;
+                    font-size: 20px;
+                    
+                }
+                .right-top{
+                    width: 100vw;
+                    height: 20vh;
+                    text-align: center;
+                    font-size: 20px;
+                    
+                }
+                .right-bottom-left{
+                    width: 100vw;
+                    height: 20vh;
+                    
+                }
+                .right-bottom-right{
+                    width: 100vw;
+                    height: 20vh;
+                }
+                .footer{
+                    height: 10vh;
+                    text-align: center;
+                    font-size: 20px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="small">
+            <select name="" id="">
+                <option value="" class="">Home</option>
+                <option value="">Product</option>
+                <option value="">About</option>
+                <option value="">Blog</option>
+                <option value="">Contact</option>
+            </select>
+        </div>
+        <div class="header">
+            <ul class="item">
+                <li>Home</li>
+                <li>Product
+                    <ul class="category">
+                        <li>Laptops</li>
+                        <li>Mobile</li>
+                        <li>Camera</li>
+                        <li>Beauty</li>
+                        <li>Health & Fitness</li>
+                    </ul>
+                </li>
+                <li>About</li>
+                <li>Blog</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="left">Left</div>
+            <div class="right">
+                <div class="right-top">right top</div>
+                <div class="right-bottom">
+                    <div class="right-bottom-left">right-bottom-left</div>
+                    <div class="right-bottom-right">right-bottom-right</div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">footer</div>
+    </body>
+</html>
