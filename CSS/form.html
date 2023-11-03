@@ -1,0 +1,159 @@
+<html>
+
+<head>
+    <title>Form</title>
+    <style>
+        body {
+            background-color: rgb(224, 216, 216);
+        }
+
+        form {
+            background-color: aqua;
+            width: 50%;
+            margin: auto;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            padding: 10px;
+            border-radius: 30px;
+            box-shadow: 0px 0px 5px 5px black;
+
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 50px;
+            margin-top: 20px;
+            color: blue;
+        }
+
+        label {
+            display: inline-block;
+            width: 25%;
+            font-size: 20px;
+            columns: ;
+        }
+
+        input[type='radio'],
+        input[type='checkbox'] {
+            margin-right: 10px;
+        }
+
+        input[type='text'],
+        input[type='password'],
+        input[type='number'],
+        input[type='date'],
+        input[type='search'],
+        input[type='email'],
+        input[type='file'],
+        select,
+        .gen,
+        textarea {
+            display: inline-block;
+            width: 68%;
+            padding: 10px;
+            margin: 10px;
+
+        }
+
+        input[type='file'] {
+            border: 1px solid black;
+        }
+
+        .gen {
+            display: inline-flex;
+            justify-content: first baseline;
+        }
+
+        .customlabel {
+            display: inline;
+
+        }
+
+        .disc {
+            vertical-align: 90px;
+        }
+
+        .custom-button {
+            text-align: center;
+
+        }
+
+        input[type='submit'] {
+            padding: 20px;
+            background-color: rebeccapurple;
+        }
+
+        input[type='submit']:hover {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <H1>Register Here</H1>
+    <form action="datasave.php" method="post" target="_blank">
+        <label for="Username">Username</label>
+        <input type="text" id="Username" name="Username" placeholder="Enter your Username">
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter your Password">
+
+        <label for="phone">Phone</label>
+        <input type="number" name="" id="Phone" placeholder="Enter your Phone">
+
+        <label for="">DOB</label>
+        <input type="date" name="" id="">
+        <!-- <button>Login</button> -->
+        <label for="">Country</label>
+        <select name="" id="">
+            <option value="">Select your county</option>
+            <option value="">Nepal</option>
+            <option value="">US</option>
+            <option value="">UK</option>
+            <option value="">Japan</option>
+        </select>
+        <label for="">Search here</label>
+        <input type="search" name="" id="">
+        <label for="">email</label>
+        <input type="email" name="" id="">
+
+        <label for="">Gender</label>
+        <div class="gen">
+            <input type="radio" name="Gender" id="Male">
+            <label for="Male" class="customlabel">Male</label>
+            <input type="radio" name="Gender" id="Female">
+            <label for="Female" class="customlabel">Female</label>
+            <input type="radio" name="Gender" id="Others">
+            <label for="Others" class="customlabel">Others</label>
+        </div>
+        <label for="">Marital Status</label>
+        <div class="gen">
+            <input type="radio" name="marital Status" id="Single">
+            <label for="Single" class="customlabel">Single</label>
+            <input type="radio" name="marital Status" id="Married">
+            <label for="Married" class="customlabel">Married</label>
+        </div>
+        <label for="">Skills</label>
+        <div class="gen">
+            <input type="checkbox" name="" id="html"><label for="html" class="customlabel">HTML</label>
+            <input type="checkbox" name="" id="css"><label for="css" class="customlabel">CSS</label>
+            <input type="checkbox" name="" id="js"><label for="js" class="customlabel">Javascript</label>
+            <input type="checkbox" name="" id="react"><label for="react" class="customlabel">React</label>
+        </div>
+        <label for="">Profile Image</label> <input type="file" name="" id="">
+
+        <label for="" class="disc">Description</label>
+        <textarea name="" id="" cols="10" rows="10">
+        </textarea>
+        <!-- <input type="submit" value="Login"> -->
+        <div class="custom-button">
+            <input type="submit" value="Register">
+            <p>Already have account? <a href="link.html">Login here</a></p>
+            <a href="https://www.youtube.com/" style="background-color: red;">Youtube</a>
+        </div>
+
+
+    </form>
+</body>
+
+</html>
