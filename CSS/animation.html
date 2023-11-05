@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            background-color: yellow;
+            width: 300px;
+            height: 300px;
+            font-size: 80px;
+
+            animation: myanimation 3s ease 1s infinite normal forwards;
+        }
+
+        @keyframes myanimation {
+
+            /* from{
+                background-color: red;
+            }
+            to{
+                background-color: purple;
+                transform: translateX(1000px) translateY(400px) rotate(2000deg);
+            }
+             */
+            0% {}
+
+            25% {
+                background-color: purple;
+                transform: translateX(1000px)rotate(1000deg);
+            }
+
+            50% {
+                background-color: red;
+                transform: translate(1000px, 350px)rotate(-500deg);
+                border-radius: 50%;
+            }
+
+            75% {
+                background-color: green;
+                transform: translateY(350px) rotate(500deg);
+            }
+            100%{
+                background-color: aqua;
+                /* transform: rotate(300deg); */
+            }
+           
+    </style>
+</head>
+
+<body>
+    <div class="container">Hello</div>
+</body>
+
+</html>
